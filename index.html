@@ -3,22 +3,57 @@
 <head>
     <meta charset = "utf-8"/>
     <title>Aprendiendo jQuery</title>
+
+    <style>
+        .zebra{
+            border: 5px solid black;
+        }
+        .grande{
+            font-size: 30px;
+        }
+        .margen-superior{
+            display:block;
+            margin-top: 45px;   
+        }
+        .resaltado{
+            border-bottom: 5px solid green;
+        }
+
+    </style>
+
     <!--<script                                                            Esta es una forma de descargar el jquery
 			  src="https://code.jquery.com/jquery-3.7.0.js"
 			  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
 			  crossorigin="anonymous">
     </script> -->
     <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script> <!--Esta es la otra forma de llamar jquery, incluyendolo en carpeta-->
+    <script type="text/javascript" src="js/01-selectores.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            console.log("Web y jQuery cargados correctamente.")
-        })
-    </script>
 
 </head>
 <body>
     <h1>Aprendiendo jQuery</h1>
+
+    <ul>    <!-- Lista desordenada de enlaces-->
+        <li><a href = "https://www.google.com" title="Google"> Ir a Google</a></li>
+        <li><a href = "https://www.facebook.com" title="Facebook"> Ir a Facebook</a></li>
+        <li><a href = "https://www.pinterest.com" title="Pinterest"> Ir a Pinterest</a></li>
+    </ul>
+
     <p>Ejercicios de jQuery</p>
+    <p id = "rojo" class = "sin_borde">  Párrafo rojo</p>
+    <p id = "amarillo" class = "zebra">  Párrafo amarillo</p>
+    <p id = "verde" class = "sin_borde">  Párrafo verde</p>
+    <p class = "zebra">  Párrafo blanco</p>
+
+    <div id = "caja">
+        <p>Caja #1:</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li class = "resaltado">Elemento 2</li>
+        </ul>
+        <span class = "resaltado"></span>
+    </div>
+
 </body>
 </html>

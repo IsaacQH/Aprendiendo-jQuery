@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     function addLinks(){
         var links = $('a')                                            //Guarda en variable links etiquetas a
-        links.each(function(index){                                   //Recorre cada etiqueta a
+        links.each(function(){                                        //Recorre cada etiqueta a
             console.log($(this))                                      //Imprime las etiquetas a
             var contenido = $(this).attr('href')                      //Guarda el valor de texto de href de cada etiqueta a con attr()
             console.log(contenido)                                    //Imprime cada link como txt

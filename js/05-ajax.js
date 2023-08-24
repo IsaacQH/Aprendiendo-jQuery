@@ -48,7 +48,7 @@ $(document).ready(function() {
             beforeSend: function(){console.log("Enviando usuario")},         //Antes de enviar
             success: function(response){console.log(response)},              //Si hubo exito
             error: function(){console.log("Ocurrio un error")},              //Si hay un error
-            timeout: 100                                                    //5000 ms
+            timeout: 100                                                     //Límite de tiempo
         })
 
     return false                                                              //Evita redirigir la página

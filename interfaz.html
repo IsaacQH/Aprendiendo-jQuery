@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI</title>
+
+    
+
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>                <!--jQuery-->
+    <script type = "text/javascript" src = "js/jquery-UI/jquery-ui.min.js"></script>     <!--jQuery UI basico-->
+    
+    <link rel = "stylesheet" href = "js/jquery-UI/jquery-ui.min.css"/>
+    <link rel = "stylesheet" href = "js/jquery-UI/jquery-ui.structure.min.css"/>
+    <link rel = "stylesheet" href = "js/jquery-UI/jquery-ui.theme.min.css"/>
+    
+    <script type = "text/javascript" src = "js/06-interfaz.js"></script>                 <!--SCRIPT-->
+
+    <style>
+        .elemento{                                                     /* Clase elemento*/
+            width:300px;                                                /* Del tamaño de 300px */
+            height: 200px;                                             /* Del tamaño de 200px*/
+            border:4px dashed salmon;                                /* Borde*/
+            background-color: lightblue;                             /* Fondo de color*/
+            margin: 20px;                                              /* Marco de 20px*/
+            float: left;                                               /* Se colocan a la izq*/
+        }
+
+        .lista-seleccionable li{                                       /* Clase lista-seleccionable para etiquetas li*/
+            width: 80%;                                                /* Del tamaño del 80%*/
+            height: 10%;                                               /* Del tamaño del 10%*/
+            padding: 20px;                                             /* Un padding alrededor*/
+            border: 1px solid burlywood;                             /* Borde*/
+            list-style: none;                                          /* Se quitan los puntos de la lista*/
+            cursor: pointer;                                           /* Hace un pointer al cursor*/
+            text-align: center;                                        /*Alinea el texto al centro*/
+        }
+
+        ul .ui-selecting{background-color: pink;}                    /* Nos crea un background cuando se presiona un elemento de ul con UI*/
+        ul .ui-selected {background-color: palevioletred;}           /* Nos crea un background cuando se selecciona un elemento de ul con UI*/
+
+        #area{
+            width: 300px;                                              /* Del tamaño de 310px */
+            height: 300px;                                             /* Del tamaño de 100px*/
+            border:4px solid rgb(39, 215, 203);                      /* Borde*/
+        }
+        #enter{
+            width: 100px;                                              /* Del tamaño de 310px */
+            height: 100px;                                             /* Del tamaño de 100px*/
+            border:4px solid rgb(58, 233, 122);                      /* Borde*/
+        }
+        .efectos{
+            background-color: rgb(145, 25, 175);                     /* Fondo de color*/
+            float: none;
+            display: none;                                
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Aprendiendo jQuery: jQuery UI</h1> <hr>
+
+    <!-- tOOLTIP **************************************************************************************-->
+    <p>
+        <h3>Tooltip</h3>
+        <a href="#" id = "datos" title = "Acceder a la seccion de datos" >Mis datos</a>    <!-- Link vacio para tooltip-->
+        <a href="#" id = "datos" title = "Este es un acordeon de burbuja" >Accord</a>
+        <a href="#" id = "datos" title = "Hola" >Hola</a>
+    </p>
+    <hr/>
+    <!-- Cuadro de diálogo **************************************************************************************-->
+    <p>
+        <h3>Cuadros de diálogo</h3>
+        <button id ="popup">Popup</button>
+        <div id = "dialog" style = "display:none;">
+            <p> Esta es una prueba de cuadros de diálogo...</p>
+        </div>
+    </p>
+    <hr/>
+    <!-- Calendario **************************************************************************************-->
+    <p>
+        <h3>Calendario</h3>
+        <input type = "texto" id = "calendario">
+    </p>
+    <hr/>
+    <!-- Pestañas  **************************************************************************************-->
+    <p>
+        <h3>Pestañas</h3>
+
+        <div id = "pestaña">
+            <ul>
+                <li><a href="#tabs-1">Pestaña 1</a></li>
+                <li><a href="#tabs-2">Pestaña 2</a></li>
+            </ul>
+            <div id = "tabs-1">Esta es la primera pestaña</div>
+            <div id = "tabs-2">Esta es la Segunda pestaña</div>
+        </div>
+
+
+    </p>
+    <hr/>
+    <!-- EFECTOS **************************************************************************************-->
+    <p>
+    <button id = "boton">Aplicar efecto</button>
+    <div id ="caja" class = "efectos elemento"></div>
+    </p>
+
+    <!-- Interacciones **************************************************************************************-->
+    <!--
+    <ul class = "lista-seleccionable">
+        <li>Pokemon</li>
+        <li>Sonic</li>
+        <li>Super Smash Bros</li>
+        <li>Zelda</li>
+        <li>Metroid</li>
+    </ul>
+
+    <div id= "area" class="elemento"></div>
+    <br/>
+    <div id = "enter" class="elemento" ></div>
+
+    <div class="elemento">Elemento 1</div>
+    <div class="elemento">Elemento 2</div>
+    <div class="elemento">Elemento 3</div>   -->
+
+</body>
+</html>
